@@ -14,7 +14,7 @@
       <div class="portfolio-link-container">
         <img
           class="portfolio-link-image"
-          src="../../assets\PortfolioAssets\2k21-logo.jpg"
+          src="../../assets\portfolioassets\2k21-logo.jpg"
         />
         <div class="portfolio-link-text">
           <h4>NBA 2K21 Usability Changes</h4>
@@ -36,7 +36,7 @@
       <div class="portfolio-link-container">
         <img
           class="portfolio-link-image whitebg"
-          src="../../assets\PortfolioAssets\venn.png"
+          src="../../assets\portfolioassets\venn.png"
         />
         <div class="portfolio-link-text">
           <h4>My Design Process</h4>
