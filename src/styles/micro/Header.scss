@@ -3,168 +3,83 @@
 @import "../Breakpoints.scss";
 
 .header-container {
-    font-family: $pli-header-font;
-    max-height: 110px;
-    min-height: 110px;
+    font-family: $pli-text-font;
+    max-height: 80px;
+    min-height: 80px;
     display: flex;
     align-items: center;
-    padding: 6px 16px;
     background-color: $pli-bg-biege;
+    padding: 6px 16px;
 
     .header-logo {
         width: 10%;
-    }
-
-    .header-left {
-        width: 25%;
-        .header-title {
-            color: $pli-grey;
-            font-size: 32px;
+      }
+    
+      .header-left {
+        width: 40%;
+        span {
+          display: block;
+          text-align: center;
         }
-    }
-
-    .header-middle {
-        width: 45%;
-    }
-
-    .header-aotn {
-        width: 20%;
-        .album-otn {
-            display: flex;
-            flex-direction: row;
-            color: $pli-forest;
-            &-left {
-                flex: 0.7;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            }
-            &-right {
-                flex: 0.3;
-            }
-            &-image {
-                height: 100px;
-                width: 100px;
-            }
-            &-store-link {
-                text-decoration: underline;
-            }
+      }
+    
+      .header-mid {
+        width: 40%;
+        text-align: center;
+        a {
+          padding: 0 8px;
         }
-    }
-
-    .menu-container {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        padding-right: 10%;
-        .menu-col {
-            width: 20%;
-            text-align: center;
+      }
+    
+      .header-right {
+        width: 10%;
+        span {
+          display: block;
+          text-align: center;
         }
-        .menu-button {
-            text-decoration: none;
-            width: 100%;
-            font-size: 20px;
-            background-image: linear-gradient($pli-leaf, $pli-leaf), 
-                linear-gradient($pli-bg-biege, $pli-bg-biege);
-            background-size: 0 2px, auto;
-            background-repeat: no-repeat;
-            background-position: center bottom;
-            transition: all .2s ease-out;
-            padding-bottom: 3px;
-            &:hover {
-                background-size: 100% 2px, auto;
-            }
-        }
-    }
-
-    //Tablet
-    @media only screen and (min-width: $small) and (max-width: $med) {
+      }
+    
+      //Tablet
+      @media only screen and (min-width: $small) and (max-width: $med) {
         .header-logo {
-            width: 15%;
+          width: 20%;
         }
-
         .header-left {
-            width: 35%;
-            .header-title {
-                font-size: 26px;
-            }
+          width: 80%;
         }
-
-        .header-middle {
-            width: 50%;
+        .header-mid {
+          width: 70%;
+          padding-top: 2%;
+          padding-bottom: 2%;
         }
-
-        .header-aotn {
-            display: none;
+        .header-right {
+          width: 30%;
+          padding-top: 2%;
+          padding-bottom: 2%;
         }
-    }
-
-    //Mobile
-    @media only screen and (max-width: $small) {
-        max-height: 90px;
-        min-height: 90px;
-
-        .header-logo {
-            width: 20%;
+      }
+    
+        //Mobile
+        @media only screen and (max-width: $small) {
+          .header-logo {
+            width: 15%;
             img {
               width: 53px;
               height: 40px;
             }
-        }
-
-        .header-left {
+          }
+          .header-left {
             display: none;
-        }
-
-        .header-middle {
-            width: 80%;
-        }
-
-        .header-aotn {
+          }
+          .header-mid {
+            width: 85%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            text-align: right;
+          }
+          .header-right {
             display: none;
+          }
         }
-
-        .menu-container {
-            padding-right: 0;
-            .menu-button {
-                font-size: 16px;
-            }
-        }
-    }
-
-    // Big tablet kinda
-    @media only screen and (min-width: $med) and (max-width: $large) {
-        .header-logo {
-            width: 10%;
-        }
-
-        .header-left {
-            width: 40%;
-        }
-
-        .header-middle {
-            width: 50%;
-        }
-
-        .header-aotn {
-            display: none;
-        }
-    }
-
-    @media only screen and (max-width: 1250px) {
-        .album-otn-left {
-            .released {
-                display: none;
-            }
-        }
-
-        .menu-container {
-            justify-content: center;
-            .menu-col {
-                width: 33%;
-                padding-bottom: 10px;
-            }
-        }
-    }
+    
 }

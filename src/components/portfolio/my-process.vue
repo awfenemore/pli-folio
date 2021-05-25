@@ -1,7 +1,7 @@
 <template>
-  <div class="about-me">
+  <div class="my-process">
 
-
+<h1> my process</h1>
 
     <!-- <h1>About Me</h1>
     <v-row align-content="space-between">
@@ -51,8 +51,8 @@
 
 <script>
 export default {
-  name: "AboutMe"
+  name: "MyProcess"
 };
 </script>
 
-<style lang="scss" src="../../styles/primary/aboutme.scss"></style>
+<style lang="scss" src="../../styles/portfolio/my-process.scss"></style>

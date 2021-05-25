@@ -1,7 +1,7 @@
 <template>
-  <div class="about-me">
+  <div class="2k21">
 
-
+<h1> 2k21</h1>
 
     <!-- <h1>About Me</h1>
     <v-row align-content="space-between">
@@ -51,8 +51,8 @@
 
 <script>
 export default {
-  name: "AboutMe"
+  name: "K21"
 };
 </script>
 
-<style lang="scss" src="../../styles/primary/aboutme.scss"></style>
+<style lang="scss" src="../../styles/portfolio/k21.scss"></style>

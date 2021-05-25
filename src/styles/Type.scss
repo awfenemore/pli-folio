@@ -3,14 +3,21 @@
 
 // Desktop default - it just isnt really made to be read slowly on your phone. You'll be ok
 h1 {
-  color: $pli-forest;
+  color: $pli-grey;
   margin-bottom: 24px;
   font: normal normal normal 42px $pli-header-font;
 }
 
 h3 {
-  color: $pli-forest;
-  font: normal normal 500 24px $pli-header-font;
+  color: $pli-grey;
+  font: normal normal 500 28px $pli-header-font;
+}
+
+h4 {
+  font-weight: 500;
+  color: $pli-grey;
+  font-family: $pli-header-font;
+  font-size: 20px;
 }
 
 h5 {

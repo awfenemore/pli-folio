@@ -4,6 +4,27 @@
     background-color: $pli-bg-biege !important;
 }
 
+.tag {
+    &.qol {
+        border-left: 4px solid $pli-orange;
+        border-bottom: 4px solid $pli-orange;
+    }
+    &.navigation {
+        border-left: 4px solid $pli-teal;
+        border-bottom: 4px solid $pli-teal;
+    }
+    &.redesign {
+        border-left: 4px solid $pli-forest;
+        border-bottom: 4px solid $pli-forest;
+    }
+    &.process {
+        border-left: 4px solid $pli-leaf;
+        border-bottom: 4px solid $pli-leaf;
+    }
+    border-left: 4px solid $pli-forest;
+    border-bottom: 4px solid $pli-forest;
+}
+
 // Desktop
 @media only screen and (min-width: 1264px) {
     .article-image {

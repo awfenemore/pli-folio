@@ -1,5 +1,5 @@
 <template>
-  <div class="about-me">
+  <div class="resume">
 
 
 
@@ -51,8 +51,8 @@
 
 <script>
 export default {
-  name: "AboutMe"
+  name: "Resume"
 };
 </script>
 
-<style lang="scss" src="../../styles/primary/aboutme.scss"></style>
+<style lang="scss" src="../../styles/primary/resume.scss"></style>

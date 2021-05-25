@@ -3,6 +3,10 @@
 @import "Fonts.scss";
 @import "./Breakpoints.scss";
 
+#app {
+  min-height: 100vh;
+}
+
 .v-application a {
   color: $pli-forest !important; // Consider finding a better way to do this
   &:visited {
@@ -10,22 +14,22 @@
   }
 }
 
-.v-content {
-  background-color: $pli-bg-grey;
-  &__wrap {
-    padding: 5vh 10vw 5vh 10vw;
-  }
+.v-main__wrap {
+  padding: 5vh 10vw;
 }
-@media only screen and (max-width: 600px) {
-  .v-content__wrap {
-    padding: 5vh 7vw;
-  }
-  .menu-title {
-    text-align: left;
+
+@media only screen and (max-width: $large) {
+  .v-main__wrap {
+    padding: 3vh 5vw;
   }
 }
 
-.bot-border,
+.bot-border {
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(to right, $pli-leaf, #d9f9aa, $pli-leaf);
+}
+
 .top-border {
   width: 100%;
   height: 2px;
@@ -54,52 +58,3 @@
   padding-left: 20%;
 }
 
-// Dropdown Menus
-
-.projects-menu,
-.stories-menu {
-  background-color: $pli-bg-grey;
-  color: $pli-forest;
-  .inner-menu {
-    display: flex;
-    width: 100%;
-    padding: 1% 10%;
-    .menu {
-      &-category {
-        width: 25%;
-      }
-    }
-  }
-
-  h4 {
-    text-align: center;
-    font: normal normal normal 18px/24px $pli-header-font;
-    color: $pli-forest;
-    margin-bottom: 8px;
-  }
-  .menu-link {
-    font-family: $pli-text-font;
-  }
-
-  //Mobile
-  @media only screen and (max-width: $small) {
-    .menu {
-      &-link {
-        padding-left: 0;
-        font-size: 14px;
-      }
-      &-title {
-        font-size: 16px;
-        min-height: 48px;
-      }
-    }
-  }
-
-  @media only screen and (max-width: $large) {
-    .menu {
-      &-link {
-        padding-left: 0;
-      }
-    }
-  }
-}

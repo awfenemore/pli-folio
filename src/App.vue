@@ -1,68 +1,12 @@
 <template>
   <v-app>
-    <Header
-      v-on:openProjects="projClick"
-      v-on:openStories="storiesClick"
-      id="top"
-    />
+    <Header id="top" />
 
     <div class="top-border"></div>
 
-    <v-expand-transition>
-      <div v-show="this.isProjMenuOpen" class="projects-menu">
-        <div class="inner-menu">
-          <div class="menu-category">
-            <h4 class="menu-title">Product Design</h4>
-            <span class="menu-link" v-on:click="closeMenus">Coming Soon</span>
-          </div>
-          <div class="menu-category">
-            <h4 class="menu-title">Visual Design</h4>
-            <span class="menu-link" v-on:click="closeMenus">Coming Soon</span>
-          </div>
-          <div class="menu-category">
-            <h4 class="menu-title">Solution Design</h4>
-            <span class="menu-link" v-on:click="closeMenus">Coming Soon</span>
-          </div>
-          <div class="menu-category">
-            <h4 class="menu-title">Cetero</h4>
-            <span class="menu-link" v-on:click="closeMenus">Coming Soon</span>
-          </div>
-        </div>
-        <div class="bot-border"></div>
-      </div>
-    </v-expand-transition>
-
-    <v-expand-transition>
-      <div v-show="this.isStoriesMenuOpen" class="stories-menu">
-        <div class="inner-menu">
-          <div class="menu-category">
-            <h4 class="menu-title">People</h4>
-            <span class="menu-link" v-on:click="closeMenus">Coming Soon</span>
-          </div>
-          <div class="menu-category">
-            <h4 class="menu-title">Animals</h4>
-            <router-link to="/stories/springer"
-              ><span class="menu-link" v-on:click="closeMenus"
-                >Springer</span
-              ></router-link
-            >
-          </div>
-          <div class="menu-category">
-            <h4 class="menu-title">Sport</h4>
-            <span class="menu-link" v-on:click="closeMenus">Coming Soon</span>
-          </div>
-          <div class="menu-category">
-            <h4 class="menu-title">Cetero</h4>
-            <span class="menu-link" v-on:click="closeMenus">Coming Soon</span>
-          </div>
-        </div>
-        <div class="bot-border"></div>
-      </div>
-    </v-expand-transition>
-
-    <v-content class="content">
+    <v-main class="content">
       <router-view></router-view>
-    </v-content>
+    </v-main>
 
     <div class="bot-border"></div>
 
@@ -78,44 +22,16 @@ import Header from "./components/micro/Header.vue";
 export default Vue.extend({
   name: "App",
   head: {
-    meta: [{ name: "theme-color", content: "#f5eeda" }]
+    meta: [{ name: "theme-color", content: "#54850A" }]
   },
   components: {
     Footer,
     Header
   },
   data() {
-    return {
-      isProjMenuOpen: false,
-      isStoriesMenuOpen: false
-    };
+    return {};
   },
-  methods: {
-    projClick(): void {
-      if (!this.isProjMenuOpen) {
-        if (this.isStoriesMenuOpen) {
-          this.isStoriesMenuOpen = false;
-        }
-        this.isProjMenuOpen = true;
-      } else {
-        this.isProjMenuOpen = false;
-      }
-    },
-    storiesClick(): void {
-      if (!this.isStoriesMenuOpen) {
-        if (this.isProjMenuOpen) {
-          this.isProjMenuOpen = false;
-        }
-        this.isStoriesMenuOpen = true;
-      } else {
-        this.isStoriesMenuOpen = false;
-      }
-    },
-    closeMenus(): void {
-      this.isProjMenuOpen = false;
-      this.isStoriesMenuOpen = false;
-    }
-  }
+  methods: {}
 });
 </script>
 

@@ -3,32 +3,13 @@ import VueRouter from "vue-router";
 import VueHead from "vue-head";
 
 // Primary
-import Home from "../components/primary/Home.vue";
-import AboutPli from "../components/primary/AboutPli.vue";
+import Portfolio from "../components/primary/Portfolio.vue";
 import AboutMe from "../components/primary/AboutMe.vue";
-import AlbumoftheNow from "../components/primary/AlbumoftheNow.vue";
+import Resume from "../components/primary/Resume.vue";
 
-// Secondary
-
-// ----- Design -----
-
-// Product
-
-// Visual
-
-// Solution
-
-// Cetero
-
-// ----- Stories -----
-
-// People
-
-// Animals
-import Springer from "../components/secondary/stories/animals/Springer.vue";
-// Sport
-
-// Cetero
+// Portfolio
+import MyProcess from "../components/portfolio/my-process.vue";
+import K21 from "../components/portfolio/k21.vue";
 
 Vue.use(VueHead);
 Vue.use(VueRouter);
@@ -37,50 +18,32 @@ const routes = [
   // Primary
   {
     path: "/",
-    name: "home",
-    component: Home
+    name: "portfolio",
+    component: Portfolio
   },
-  {
-    path: "/aboutpli",
-    name: "aboutpli",
-    component: AboutPli
-  },
+
   {
     path: "/aboutme",
     name: "aboutme",
     component: AboutMe
   },
   {
-    path: "/albumofthenow",
-    name: "albumofthenow",
-    component: AlbumoftheNow
+    path: "/resume",
+    name: "resume",
+    component: Resume
   },
 
-  // Secondary
-
-  // ----- Design -----
-
-  // Product
-
-  // Visual
-
-  // Solution
-
-  // Cetero
-
-  // ----- Stories -----
-
-  // People
-
-  // Animals
+  // Portfolio
   {
-    path: "/stories/springer",
-    name: "springer",
-    component: Springer
+    path: "/myprocess",
+    name: "myprocess",
+    component: MyProcess
+  },
+  {
+    path: "/2k21",
+    name: "2k21",
+    component: K21
   }
-  // Sport
-
-  // Cetero
 ];
 
 const router = new VueRouter({
