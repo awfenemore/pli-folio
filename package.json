@@ -2,11 +2,13 @@
   "name": "pli-site",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://awfenemore.github.io/pli-folio/",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "node scripts/deploy.js"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "core-js": "^3.4.4",
@@ -31,6 +33,7 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^5.0.0",
     "execa": "latest",
+    "gh-pages": "^3.2.0",
     "node-sass": "^4.12.0",
     "prettier": "^1.19.1",
     "sass": "^1.19.0",
