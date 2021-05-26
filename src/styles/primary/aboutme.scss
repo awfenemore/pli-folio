@@ -1,4 +1,20 @@
-.link {
-    display: inline-block;
-    text-decoration: underline;
+.double-image-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 64px 0;
+    .double-image {
+        max-width: 50%;
+        margin: 32px 0;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    .double-image-container {
+        .double-image {
+            max-width: 80%;
+            margin: 32px 0;
+        }
+    }
 }

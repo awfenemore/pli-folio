@@ -1,14 +1,15 @@
 <template>
   <div class="header-container">
-
-    <div class="header-logo">
-      <img
-        src="../../assets/pli-grey-logo.svg"
-        alt="Pli Logo"
-        height="60"
-        width="80"
-      />
-    </div>
+    <router-link to="/">
+      <div class="header-logo">
+        <img
+          src="../../assets/pli-grey-logo.svg"
+          alt="Pli Logo"
+          height="60"
+          width="80"
+        />
+      </div>
+    </router-link>
 
     <div class="header-left">
       <span>
@@ -30,7 +31,7 @@ export default {
   name: "Header",
   data() {
     return {};
-  }
+  },
 };
 </script>
 

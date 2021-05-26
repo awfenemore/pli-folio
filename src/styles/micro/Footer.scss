@@ -40,18 +40,18 @@
   //Tablet
   @media only screen and (min-width: $small) and (max-width: $med) {
     .footer-logo {
-      width: 20%;
+      width: 15%;
     }
     .footer-left {
-      width: 80%;
+      display: none;
     }
     .footer-mid {
-      width: 70%;
+      width: 65%;
       padding-top: 2%;
       padding-bottom: 2%;
     }
     .footer-right {
-      width: 30%;
+      width: 20%;
       padding-top: 2%;
       padding-bottom: 2%;
     }

@@ -4,6 +4,13 @@
     background-color: $pli-bg-biege !important;
 }
 
+.portfolio-menu {
+    padding: 84px 0px;
+    .portfolio-link {
+        padding: 0px 8px;
+    }
+}
+
 .tag {
     &.qol {
         border-left: 4px solid $pli-orange;
@@ -23,6 +30,63 @@
     }
     border-left: 4px solid $pli-forest;
     border-bottom: 4px solid $pli-forest;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+
+}
+
+@media only screen and (max-width: 1025px) {
+    .content-container {
+        width: 100%;
+    }
+
+}
+
+.portfolio-image {
+    max-width: 70%;
+    max-height: 400px;
+    margin: 64px 0;
+    &-container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    .portfolio-image {
+        max-width: 100%;
+        margin: 32px 0;
+    }
+    .portfolio-menu {
+        text-align: center;
+    }
+}
+
+.portfolio-section {
+    margin: 48px 0;
+}
+
+@media only screen and (max-width: 1025px) {
+    .portfolio-section {
+        margin: 24px 0;
+    }
+}
+
+.portfolio-menu {
+    display: flex;
+    justify-content: center;
+
+    &-link {
+    text-decoration: none;
+    padding: 0 8px;
+    &:hover {
+        color: $pli-leaf !important;
+    }
+}
 }
 
 // Desktop

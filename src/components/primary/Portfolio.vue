@@ -53,11 +53,14 @@
     </router-link>
 
     <!-- Portfolio menu -->
+    <PortfolioMenu />
   </div>
 </template>
 
 <script>
+import PortfolioMenu from "../micro/PortfolioMenu.vue";
 export default {
+  components: { PortfolioMenu },
   name: "Portfolio",
 };
 </script>

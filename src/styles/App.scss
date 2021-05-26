@@ -12,10 +12,15 @@
   &:visited {
     color: $pli-coral;
   }
+  &:hover {
+    color: $pli-leaf !important;
+  }
 }
 
 .v-main__wrap {
   padding: 5vh 10vw;
+  display: flex;
+  justify-content: center;
 }
 
 @media only screen and (max-width: $large) {
