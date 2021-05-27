@@ -8,6 +8,10 @@
     <router-link to="/myprocess" class="portfolio-menu-link"
       >My Design Process</router-link
     >
+    /
+    <router-link to="/engaging" class="portfolio-menu-link"
+      >Engaging with local council</router-link
+    >
   </div>
 </template>
 
@@ -16,7 +20,7 @@ export default {
   name: "PortfolioMenu",
   data() {
     return {};
-  }
+  },
 };
 </script>
 

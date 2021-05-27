@@ -1,57 +1,66 @@
 <template>
-  <div class="resume">
+  <div class="resume content-container">
+    <h1>Resume</h1>
+    <div class="resume-container">
+      <div class="experience-container">
+        <div class="experience-left">
+          <h3>Intergen - Developer and Designer</h3>
+          <h5>Sept 2018 - Current</h5>
+        </div>
+        <div class="experience-right">
+          <p>
+            I began this role as a graduate, was promoted through junior and now
+            to intermediate level. My role is a hybrid role, encompassing
+            development, UX research and strategy, and UX/UI design. I worked
+            with private and public sector clients and took many learning
+            opportunities along the way.
+          </p>
+        </div>
+      </div>
+    </div>
 
+    <div class="skills-container">
+      <div class="experience-left">
+        <h3>Key skills</h3>
+      </div>
+      <div class="experience-right">
+        <p class="skill">User experience principles</p>
+        <p class="skill">Qualitative and Quantitative user research</p>
+        <p class="skill">Interaction Design</p>
+        <p class="skill">Front End Development</p>
+        <p class="skill">SPA development (Vue, React)</p>
+        <p class="skill">CMS development and design</p>
+        <p class="skill">Behavioural Science</p>
+      </div>
+    </div>
 
+    <div class="skills-container">
+      <div class="experience-left">
+        <h3>Qualifications</h3>
+      </div>
+      <div class="experience-right">
+        <h4>BSc Hons (First Class), Psychology</h4>
+        <p>University of Otago, 2011</p>
+        <h4>BSc, Computer Science</h4>
+        <p>University of Canterbury, 2018</p>
+      </div>
+    </div>
 
-    <!-- <h1>About Me</h1>
-    <v-row align-content="space-between">
-      <v-col cols="12" md="8" lg="9">
-        <h3>Welcome</h3>
-        <p>
-          Welcome, and thanks for visiting. As you may have seen elsewhere on
-          the site, this is a site designed, developed, supported, and run by
-          one person. My name is Adam, I am very passionate about improving
-          things, learning stuff, and understanding why things are how they are.
-        </p>
-        <p>
-          I am both a designer and developer by trade, but I am someone who is
-          passionate about a lot of things and fascinated by even more things -
-          far more than only development and design. Hopefully you have seen a
-          bit of my personality come through in other parts of the site, but in
-          case you haven't, or just want to know more...
-        </p>
-        <p>
-          I have 5 main goals in life: to learn as much as possible, to chase
-          all my passions, to make the world a better place, to constantly
-          improve, and to die a grumpy old man who gave out all his love for the
-          world while he still could. I consider my true passions to be the
-          things that I love for reasons that I can't always explain and have
-          loved for a long time. For me, that includes but is not limited to:
-          games, sport music, travel, volunteering, design of all kinds, and
-          animals.
-        </p>
-        <p>
-          If you would like to reach out to me, you are welcome to below, and I
-          look forward to hearing from you.
-        </p>
-      </v-col>
-      <v-col cols="12" md="4" lg="3"
-        ><v-img src="../../assets/blue-mountains.jpg"></v-img
-      ></v-col>
-    </v-row>
-    <a href="https://www.linkedin.com/in/awfenemore/" target="_blank"
-      ><h3 class="link">Linkedin</h3></a
-    ><br />
-    <a href="mailto:awfenemore@gmail.com"><h3 class="link">Email</h3></a> -->
+    <!-- Certifications -->
+    <!-- <div class="skills-container">
+      <div class="experience-left">
+        <h3>Certifications</h3>
+      </div>
+      <div class="experience-right">
 
-
-
+      </div>
+    </div> -->
   </div>
 </template>
 
 <script>
 export default {
-  name: "Resume"
+  name: "Resume",
 };
 </script>
 

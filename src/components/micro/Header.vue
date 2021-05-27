@@ -21,7 +21,7 @@
       <router-link to="/">Portfolio</router-link> /
       <router-link to="/aboutme">About Me</router-link> /
       <router-link to="/resume">Resume</router-link> /
-      <a href="mailto:awfenemore@gmail.com">Contact me</a>
+      <a href="mailto:awfenemore@gmail.com">Contact</a>
     </div>
   </div>
 </template>

@@ -10,6 +10,7 @@ import Resume from "../components/primary/Resume.vue";
 // Portfolio
 import MyProcess from "../components/portfolio/my-process.vue";
 import K21 from "../components/portfolio/k21.vue";
+import Engaging from "../components/portfolio/engaging.vue";
 
 Vue.use(VueHead);
 Vue.use(VueRouter);
@@ -43,6 +44,11 @@ const routes = [
     path: "/2k21",
     name: "2k21",
     component: K21
+  },
+  {
+    path: "/engaging",
+    name: "engaging",
+    component: Engaging
   }
 ];
 

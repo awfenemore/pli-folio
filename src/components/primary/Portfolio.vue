@@ -52,6 +52,30 @@
       </div>
     </router-link>
 
+    <router-link to="/engaging" class="portfolio-link">
+      <div class="portfolio-link-container">
+        <img
+          class="portfolio-link-image whitebg"
+          src="../../assets\portfolioassets\govtech.png"
+        />
+        <div class="portfolio-link-text">
+          <h4>Engaging with local council</h4>
+          <div class="tags">
+            <span class="tag innovation">Innovation</span>
+            <span class="tag process">Process</span>
+          </div>
+          <p class="description">
+            Completed as part of Smart Seeds 2019 and Lightning Lab GovTech
+            2019, my team and I refreshed the process of engagement with local
+            councils for public interest projects. We conducted all manner of
+            user research, ideated a new solution, prototyped a version of our
+            final goal, all while ensuring strong support within our project
+            sponsor.
+          </p>
+        </div>
+      </div>
+    </router-link>
+
     <!-- Portfolio menu -->
     <PortfolioMenu />
   </div>
