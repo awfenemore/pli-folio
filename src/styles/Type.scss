@@ -56,6 +56,10 @@ a {
   border-top: none;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 // Tablet
 @media only screen and (min-width: 600px) and (max-width: 1264px) {
   h1 {

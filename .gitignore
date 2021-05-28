@@ -2,7 +2,7 @@
 node_modules
 README.md
 #/scripts
-#/dist
+/dist
 
 # local env files
 .env.local
