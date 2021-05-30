@@ -2,7 +2,7 @@
   <div class="portfolio">
     <!-- Intro statement -->
     <div class="statement">
-      <h3>My name is Adam Fenemore</h3>
+      <h3>Adam Fenemore - UX Designer, Developer, Behaviour Specialist</h3>
       <p>
         I am a UX designer and behaviour specialist. I love to solve problems,
         improve things, and make the world a better place. Pli is a set of work
