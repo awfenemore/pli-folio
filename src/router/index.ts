@@ -11,6 +11,8 @@ import Resume from "../components/primary/Resume.vue";
 import MyProcess from "../components/portfolio/my-process.vue";
 import K21 from "../components/portfolio/k21.vue";
 import Engaging from "../components/portfolio/engaging.vue";
+import Doc from "../components/portfolio/doc.vue";
+import Dev from "../components/portfolio/dev.vue";
 
 Vue.use(VueHead);
 Vue.use(VueRouter);
@@ -49,6 +51,16 @@ const routes = [
     path: "/engaging",
     name: "engaging",
     component: Engaging
+  },
+  {
+    path: "/pattern-library",
+    name: "design",
+    component: Doc
+  },
+  {
+    path: "/dev",
+    name: "dev",
+    component: Dev
   }
 ];
 

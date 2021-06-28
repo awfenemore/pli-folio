@@ -32,6 +32,10 @@
         border-left: 4px solid $pli-coral;
         border-bottom: 4px solid $pli-coral;
     }
+    &.dev {
+        border-left: 4px solid #6a0dad;
+        border-bottom: 4px solid #6a0dad;
+    }
     border-left: 4px solid $pli-forest;
     border-bottom: 4px solid $pli-forest;
 }

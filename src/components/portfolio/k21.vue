@@ -366,7 +366,8 @@
 </template>
 
 <script>
-import PortfolioMenu from "../micro/PortfolioMenu.vue"; export default {
+import PortfolioMenu from "../micro/PortfolioMenu.vue"; 
+export default {
 components: { PortfolioMenu }, name: "K21" };
 </script>
 

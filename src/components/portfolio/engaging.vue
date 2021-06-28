@@ -92,13 +92,13 @@
       />
       <!-- https://llgovtech.co.nz/programme/govtech2019/ -->
     </div>
+    <!-- Portfolio menu -->
+    <PortfolioMenu />
   </div>
 </template>
 
 <script>
-export default {
-  name: "Engaging",
-};
+export default { name: "Engaging" };
 </script>
 
 <style lang="scss" src="../../styles/portfolio/engaging.scss"></style>

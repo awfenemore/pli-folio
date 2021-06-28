@@ -117,11 +117,8 @@
 </template>
 
 <script>
-import PortfolioMenu from "../micro/PortfolioMenu.vue";
-export default {
-  components: { PortfolioMenu },
-  name: "MyProcess",
-};
+import PortfolioMenu from "../micro/PortfolioMenu.vue"; export default {
+components: { PortfolioMenu }, name: "MyProcess" };
 </script>
 
 <style lang="scss" src="../../styles/portfolio/my-process.scss"></style>
