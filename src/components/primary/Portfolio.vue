@@ -33,6 +33,28 @@
       </div>
     </router-link>
 
+    <router-link to="/do-good" class="portfolio-link">
+      <div class="portfolio-link-container">
+        <img
+          class="portfolio-link-image whitebg"
+          src="../../assets\portfolioassets\GoogleUXCaseStudy\screen.jpg"
+        />
+        <div class="portfolio-link-text">
+          <h4>Do Good - A Google UX Case Study</h4>
+          <div class="tags">
+            <span class="tag redesign">Redesign</span>
+            <span class="tag process">Process</span>
+          </div>
+          <p class="description">
+            Completed as part of the Google UX Certification, Do Good is a
+            simple website designed to give practical and helpful solutions to
+            large and difficult problems. This is a brief case study
+            demonstrating the process taken.
+          </p>
+        </div>
+      </div>
+    </router-link>
+
     <router-link to="/myprocess" class="portfolio-link">
       <div class="portfolio-link-container">
         <img

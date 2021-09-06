@@ -17,12 +17,21 @@
       >Pattern library implementation</router-link
     >
     /
+    <router-link to="/do-good" class="portfolio-menu-link"
+      >Do Good - Google UX Case Study</router-link
+    >
+    /
     <router-link to="/dev" class="portfolio-menu-link">Development</router-link>
   </div>
 </template>
 
 <script>
-export default { name: "PortfolioMenu", data() { return {}; } };
+export default {
+  name: "PortfolioMenu",
+  data() {
+    return {};
+  }
+};
 </script>
 
 <style lang="scss" src="../../styles/micro/shared.scss"></style>

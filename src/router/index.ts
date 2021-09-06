@@ -13,6 +13,7 @@ import K21 from "../components/portfolio/k21.vue";
 import Engaging from "../components/portfolio/engaging.vue";
 import Doc from "../components/portfolio/doc.vue";
 import Dev from "../components/portfolio/dev.vue";
+import DoGood from "../components/portfolio/dogood.vue";
 
 Vue.use(VueHead);
 Vue.use(VueRouter);
@@ -61,6 +62,11 @@ const routes = [
     path: "/dev",
     name: "dev",
     component: Dev
+  },
+  {
+    path: "/do-good",
+    name: "dogood",
+    component: DoGood
   }
 ];
 
